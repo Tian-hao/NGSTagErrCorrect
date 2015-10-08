@@ -45,7 +45,7 @@ def formatread(countr1,Decomp,tagstart,tagend,barstart,barend,tmp,read1i,read2i)
     r1file  = gzip.open(r1file,'r')
     r2file  = gzip.open(r2file,'r')
     countline  = 0
-    for r1rec in r1file.readlines():
+    for r1rec in r1file:
       r2rec = r2file.next()
       r1rec = r1rec.rstrip()
       r2rec = r2rec.rstrip()
